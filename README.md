@@ -30,7 +30,7 @@ This section captures overarching information about the session.
 
 This section contains an array of each prompt-response pair.
 
-```
+```json
 "interactions": [
   {
     "id": 1,
@@ -52,7 +52,7 @@ This section contains an array of each prompt-response pair.
 
 This section provides an overview of the session’s outcomes.
 
-```
+```json
 "summary": {
   "iterations": Total number of interactions,
   "final_prompt": "Final refined prompt used",
@@ -65,7 +65,7 @@ This section provides an overview of the session’s outcomes.
 
 This section includes any relevant supporting materials.
 
-```
+```json
 "attachments": {
   "code": "Relevant code snippets or examples",
   "logs": "Links to complete chat logs or related documentation"
@@ -75,7 +75,7 @@ This section includes any relevant supporting materials.
 Example PQE Document
 
 Here’s an example of a complete PQE document:
-```
+```json
 {
   "meta": {
     "title": "Tracking Hexbug with OpenCV",
@@ -117,7 +117,7 @@ Prompt Instructions for Generating a PQE Report
 
 When tagging onto the end of a conversation to generate a PQE report, use the following instructions:
 
-```
+```plain-text
 Now, please create a detailed Prompt-Query-Exchange (PQE) report based on this conversation. The output should be in a JSON-like format, structured as follows:
 
 {
